@@ -20,8 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function isVisible(el) {
         const r = el.getBoundingClientRect();
         const h = (window.innerHeight || document.documentElement.clientHeight);
-        const w = (window.innerWidth || document.documentElement.clientWidth);
-        return (r.top <= h) && (r.top + r.height - menuBarHeight >= 0) && (r.left <= h) && (r.left + r.width >= 0);
+        return (r.top <= h) && (r.top + r.height - navbarHeight >= 0) && (r.left <= h) && (r.left + r.width >= 0);
     }
 
     function activateIfVisible() {
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             window.scroll({
                 behavior: 'smooth', left: 0,
-                top: document.getElementById(e.target.dataset.target).getBoundingClientRect().top + window.scrollY
+                top: document.getElementById(e.target.dataset.target).getBoundingClientRect().top
             });
         });
     }
