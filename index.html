@@ -8,24 +8,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class="section">
-            <div class="container">
-                <h1 class="title">
-                    Incredible Wool Bottle
-                </h1>
-                <p class="subtitle">
-                    Soup? Pennyworth only of beautiful Soup?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur incidunt molestias repellendus! Inventore veniam sunt quos est error ut commodi recusandae,
-                    cum obcaecati quo nostrum facilis vero suscipit dolorum animi!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt, iure voluptatibus dolorum, accusantium cum illum placeat tenetur temporibus delectus nobis similique distinctio aliquid
-                    pariatur quia ut sit error deleniti laborum.
-                </p>
+        <nav class="navbar" role="navigation">
+            <div class="navbar-brand">
+                <a role="button" id="navbar-burger" class="navbar-burger burger" data-target="mainNavbar">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="mainNavbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>&ensp;
+                        Home
+                    </a>
+                    <a class="navbar-item">
+                        <span class="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </span>&ensp;
+                        About
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section id="hero" class="hero is-primary is-large">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Software Development
+                    </h1>
+                    <h2 class="subtitle">
+                        Professional, Balance
+                    </h2>
+                </div>
             </div>
         </section>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="./navbar.js"></script>
     </body>
 </html>
